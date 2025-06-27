@@ -1,0 +1,14 @@
+model: better_cnn
+dataset: cifar10
+
+activation:
+  type: custom_relu
+  precision: fp32  # Options: fp8, fp16, fp32
+
+training:
+  batch_size: 128
+  epochs: 50
+  learning_rate: 0.01
+  optimizer: adam
+
+device: cuda
