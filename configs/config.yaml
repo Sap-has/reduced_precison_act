@@ -10,5 +10,10 @@ training:
   epochs: 50
   learning_rate: 0.01
   optimizer: adam
+  print_every_n_epochs: 5
 
 device: cuda
+
+results:
+  save_results: true
+  results_path: results
